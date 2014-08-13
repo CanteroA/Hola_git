@@ -46,9 +46,10 @@ perro::perro()
 void perro::hable()
 {
     if
-            (esta_vivo) std::cout << "Guau\n";
+            (esta_vivo) std::cout << "Guau Guau Guau\n";
+
     else
-        std::cout << "RIP\n";
+        std::cout << "Este HDP está muerto\n";
 }
 void perro::haga_truco()
 {
