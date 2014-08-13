@@ -56,7 +56,7 @@ int main()
 
         }
         if (opcion =='2'){
-            anAr[i] = new gallinas();
+            anAr[i] = new gallina();
 
         }
 
