@@ -1,12 +1,22 @@
 #include <iostream>
 #include "animales.h"
 
+#define VERSION 1.0
 perro trosky;
 
 gallina josefina;
 
 int main()
 {
+    std::cout << "Hola Granja.\n"
+                 "Version: " << VERSION
+              << "\n"
+                 "Fecha:" << __DATE__
+              << "\n"
+              << "\n";
+
+
+
     /*animal firulais;
     firulais.hable();
     firulais.muerase();
@@ -65,6 +75,8 @@ int main()
     for (int i=0; i<10; i++){
         anAr[i]->hable();
     }
+
+
 
     return 0;
 }
