@@ -1,5 +1,7 @@
 #include <iostream>
 #include "animales.h"
+#include "stdio.h"
+#include <stdlib.h>
 
 #define VERSION 1.0
 perro trosky;
@@ -46,26 +48,25 @@ int main()
 
     for(int i=0; i<10; i++)
     {
-        std::cout << "Usuario... Presione 1 para crear un perro \n";
-        std::cout << "Usuario... Presione 2 para crear una gallina \n";
+        int opcion;
 
-        char opcion;
+        opcion = rand() % 2+1;
+        std::cout << "su número es: " << opcion << std::endl;
 
-        std::cin >> opcion;
 
-        while (opcion != '1' && opcion != '2') {
+       /* while (opcion != '1' && opcion != '2') {
             std::cout << "Usuario... no estas bien \n";
             std::cout << "Usuario... Presione 1 para crear un perro \n";
             std::cout << "Usuario... Presione 2 para crear una gallina \n";
 
 
             std::cin >> opcion;
-        }
-        if(opcion=='1'){
+        }*/
+        if(opcion== 1){
             anAr[i] = new perro();
 
         }
-        if (opcion =='2'){
+        if (opcion == 2){
             anAr[i] = new gallina();
 
         }
